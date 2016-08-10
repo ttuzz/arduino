@@ -1,6 +1,7 @@
 /*zcnzkn
  * 10.8.2016
  * rev 1.1
+ * https://github.com/ttuzz/arduino/tree/master/class_buton
  */
 #include "mybut.h"
 int pers = 500;
