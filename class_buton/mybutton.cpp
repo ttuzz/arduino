@@ -1,6 +1,6 @@
-#include "mybut.h"
+#include "mybutton.h"
 
-MyBut::MyBut(int _pin, int conf, int _pass, int _time , bool _on_off) {
+MyButton::MyButton(int _pin, int conf, int _pass, int _time , bool _on_off) {
   pinn = _pin;
   ptime = _time;
   sure = 0;
@@ -9,7 +9,7 @@ MyBut::MyBut(int _pin, int conf, int _pass, int _time , bool _on_off) {
   pinMode(_pin, conf);
 }
 
-int MyBut::look_but() {
+int MyButton::look_but() {
   if (on_off) {
     //Serial.println("burada1");
     if (digitalRead(pinn) == pass) {//butona basılı mı ? A
@@ -38,9 +38,9 @@ live_END:
   }
   return 0;
 }
-void MyBut::on_off_but(bool _on_off) {
+void MyButton::on_off_but(bool _on_off) {
   on_off = _on_off;
 }
-void MyBut::change_but_time(int _time) {
+void MyButton::change_but_time(int _time) {
   ptime = _time;
 }

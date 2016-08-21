@@ -3,10 +3,10 @@
 
 #include "Arduino.h"
 
-class MyBut
+class MyButton
 {
   public:
-    MyBut(int _pin, int conf, int pass, int _time , bool _on_off);
+    MyButton(int _pin, int conf, int pass, int _time , bool _on_off);
     int look_but();
     void change_but_time(int _time);
     void on_off_but(bool _on_off);
